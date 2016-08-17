@@ -1,0 +1,15 @@
+
+Copyright {
+	& .components-copyright-basic {
+		&__link {
+			transition: all .4s ease;
+			color: black;
+
+			&:focus,
+			&:hover {
+				text-decoration: none;
+				color: #d3011d;
+			}
+		}
+	}
+}

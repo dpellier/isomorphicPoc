@@ -1,0 +1,26 @@
+
+@import '../../../containers/bootstrap';
+
+$components-form-search-query-basic-typeahead-input-border: 0 !default;
+
+Query {
+	& .components-form-search-query-basic {
+		position: relative;
+
+		&__typeahead {
+			&__input {
+				float: none !important;
+				border: $components-form-search-query-basic-typeahead-input-border;
+				border-radius: 0 !important; // Thanks Bootstrap
+				box-shadow: none;
+				background: #eee;
+				width: 100% !important;
+
+				&::placeholder {
+					color: lighten($text-color, 30%);
+					font-style: italic;
+				}
+			}
+		}
+	}
+}

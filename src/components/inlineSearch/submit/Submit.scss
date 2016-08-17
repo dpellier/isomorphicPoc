@@ -1,0 +1,18 @@
+
+@import '../../../containers/bootstrap';
+
+Submit {
+	& .components-form-search-submit-basic {
+		position: static !important; // Thank's Bootstrap
+		width: 100%;
+
+		&__icon {
+			font-size: $font-size-base;
+		}
+
+		&__label {
+			display: none;
+			font-size: $font-size-base;
+		}
+	}
+}

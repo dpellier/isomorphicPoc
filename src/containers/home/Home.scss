@@ -1,0 +1,167 @@
+
+@import '../bootstrap';
+
+$templates-home-basic-search-height: 450px !default;
+$templates-home-basic-search-text-bg-color: rgba(white, .7) !default;
+$templates-home-basic-picture-shadow: 0 0 0 $brand-primary !default;
+$templates-home-basic-search-header-color: $brand-primary !default;
+$templates-home-basic-nearest-stores-bg-color: transparent !default;
+$templates-home-basic-introduction-bg-color: transparent !default;
+$templates-home-basic-products-bg-color: transparent !default;
+$templates-home-basic-events-bg-color: transparent !default;
+$templates-home-basic-seo-bg-color: #eee !default;
+
+Home {
+	& .templates-home-basic {
+		overflow: hidden;
+
+		&__search {
+			position: relative;
+			background: url('images/homepage.jpg') center no-repeat;
+			background-position: top;
+			background-size: cover;
+			padding: 30px 15px;
+
+			@media (min-width: $screen-sm){
+				padding: 60px 30px;
+				height: $templates-home-basic-search-height;
+			}
+
+			&__alternate-bg {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+			}
+
+			&__container {
+				position: relative;
+				height: auto;
+
+				.row {
+					&:first-child {
+						.col-xs-12 {
+							position: static;
+
+							@media(min-width: $screen-sm) {
+								position: absolute;
+								top: -25px;
+								bottom: initial;
+								left: 7px;
+							}
+						}
+					}
+				}
+
+				&__text {
+					background: $templates-home-basic-search-text-bg-color;
+					padding: 30px 15px;
+					bottom: 0;
+
+					@media(min-width: $screen-sm) {
+						margin: 0 auto;
+						padding: 40px;
+						padding-bottom: 100px;
+						width: 70%;
+						min-height: 200px;
+					}
+
+					&__title {
+						margin: 0;
+						text-align: center;
+						text-shadow: $templates-home-basic-picture-shadow;
+						color: $templates-home-basic-search-header-color;
+						font-size: 26px;
+
+						@media (min-width: $screen-sm){
+							font-size: 36px;
+						}
+					}
+
+					&__separator {
+						box-shadow: $templates-home-basic-picture-shadow;
+						margin: 0;
+						border: 0;
+						width: 0;
+						height: 0;
+					}
+
+					&__subtitle {
+						margin: 0 auto;
+						padding-right: 15px;
+						padding-left: 15px;
+						text-align: center;
+						text-shadow: $templates-home-basic-picture-shadow;
+						color: $templates-home-basic-search-header-color;
+						font-size: 18px;
+					}
+				}
+
+				&__nav {
+					right: 15px;
+					bottom: 15px;
+					padding-top: 15px;
+
+					@media (min-width: $screen-sm){
+						position: absolute;
+						right: 0;
+						top: 90px;
+						bottom: initial;
+						left: 15px;
+					}
+
+					&__form {
+						box-shadow: $templates-home-basic-picture-shadow;
+					}
+				}
+			}
+		}
+
+		&__nearest-stores {
+			background-color: $templates-home-basic-nearest-stores-bg-color;
+			padding: 30px 0 0;
+			display: none;
+		}
+
+		&__introduction {
+			background-color: $templates-home-basic-introduction-bg-color;
+			padding: 30px 0;
+
+			&__title {
+				margin-top: 0;
+			}
+
+			&__description {
+				text-align: justify;
+			}
+
+			&__slider {
+				padding-bottom: 30px;
+			}
+		}
+
+		&__banners {
+			margin-top: 30px;
+		}
+
+		&__products {
+			background-color: $templates-home-basic-products-bg-color;
+			padding: 30px 0 0;
+		}
+
+		&__events {
+			background-color: $templates-home-basic-events-bg-color;
+			padding: 30px 0;
+		}
+
+		&__small-banners {
+			margin-bottom: 30px;
+		}
+
+		&__seo {
+			background-color: $templates-home-basic-seo-bg-color;
+			padding: 30px 0;
+		}
+	}
+}

@@ -73,6 +73,8 @@ try {
 								<meta charset="utf-8" />
 								<title>react-isomorphic-starterkit</title>
 								<link rel="shortcut icon" href="${favicon}" />
+								<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
+								<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
 								<style>${cssModules}</style>
 							</head>
 							<body>

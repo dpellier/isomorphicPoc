@@ -1,0 +1,41 @@
+$grey-light: #d1d4d7;
+$text-color: black;
+
+SelectPicker {
+	& .components-form-search-filter-selectpicker {
+		position: relative;
+
+		&__select {
+			&__option {
+				padding: 3px 10px;
+				white-space: normal !important;
+
+				.text { // Thank's Bootstrap, auto-generated
+					margin-right: 0 !important;
+				}
+			}
+		}
+
+		.btn.dropdown-toggle {
+			border: #eee !important;
+			border-left: 1px solid $grey-light !important;
+			box-shadow: none !important;
+			background: #eee !important;
+			color: $text-color !important;
+
+			&:focus,
+			&:hover {
+				outline: none;
+				border: $grey-light !important;
+				border-left: 1px solid $grey-light !important;
+				background: $grey-light !important;
+				color: $text-color !important;
+			}
+		}
+
+		.dropdown-menu.open {
+			max-width: 100%;
+			overflow: hidden;
+		}
+	}
+}

@@ -1,0 +1,42 @@
+
+Location {
+	& .components-major-location-item-basic {
+		&__name {
+			margin-bottom: 0;
+		}
+
+		&__cities {
+			margin: 3px 0;
+			padding: 0;
+			list-style-type: none;
+
+			&__city {
+				display: inline-block;
+
+				&__link {
+					transition: all .4s ease;
+					color: #909298;
+
+					&:focus,
+					&:hover {
+						text-decoration: none;
+						color: black;
+					}
+				}
+
+				&:before {
+					padding: 0 3px;
+					content: '-';
+				}
+
+				&:first-child {
+					&:before {
+						display: none;
+						padding: 0;
+						content: '';
+					}
+				}
+			}
+		}
+	}
+}
