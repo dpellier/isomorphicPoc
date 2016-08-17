@@ -1,4 +1,4 @@
-import React from 'React';
+import React from 'react';
 import InlineCss from "react-inline-css";
 const stylesheet = require("!raw!sass!./InlineSearch.scss");
 
