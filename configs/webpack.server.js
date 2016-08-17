@@ -15,8 +15,8 @@ module.exports = {
 		filename:      "server.js"
 	},
 	plugins: [
-		new webpack.DefinePlugin({__CLIENT__: false, __SERVER__: true, __PRODUCTION__: true, __DEV__: false}),
-		new webpack.DefinePlugin({"process.env": {NODE_ENV: '"production"'}})
+		new webpack.DefinePlugin({__CLIENT__: false, __SERVER__: true, __PRODUCTION__: true, __DEV__: false})
+		//new webpack.DefinePlugin({"process.env": {NODE_ENV: '"production"'}})
 	],
 	module:  {
 		loaders: [
