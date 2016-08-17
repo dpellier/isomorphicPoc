@@ -71,6 +71,7 @@ try {
 						<html lang="en-us">
 							<head>
 								<meta charset="utf-8" />
+								<meta name="google-site-verification" content="M7nESbBcmtehD1s3g_tVVolT4bgDr7C5xoVursg7rNQ" />
 								<title>react-isomorphic-starterkit</title>
 								<link rel="shortcut icon" href="${favicon}" />
 								<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
