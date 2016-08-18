@@ -24,20 +24,20 @@ En audition, grâce à une gamme complète d’appareils auditifs esthétiques e
 		`.replace(/\n/g, '<br />');
 
 		this.locations = [
-			{url: 'url', label: 'France', cities: [
-				{url: 'url', label: 'Paris'},
-				{url: 'url', label: 'Lyon'},
-				{url: 'url', label: 'Marseille'}
+			{url: '251575-optical-center-esch-sur-alzette', label: 'France', cities: [
+				{url: '251575-optical-center-esch-sur-alzette', label: 'Paris'},
+				{url: '251575-optical-center-esch-sur-alzette', label: 'Lyon'},
+				{url: '251575-optical-center-esch-sur-alzette', label: 'Marseille'}
 			]},
-			{url: 'url', label: 'Luxembourg', cities: [
-				{url: 'url', label: 'Dudelange'},
-				{url: 'url', label: 'Luxembourg'},
-				{url: 'url', label: 'Esch-sur-Alzette'}
+			{url: '251575-optical-center-esch-sur-alzette', label: 'Luxembourg', cities: [
+				{url: '251575-optical-center-esch-sur-alzette', label: 'Dudelange'},
+				{url: '251575-optical-center-esch-sur-alzette', label: 'Luxembourg'},
+				{url: '251575-optical-center-esch-sur-alzette', label: 'Esch-sur-Alzette'}
 			]},
-			{url: 'url', label: 'Suisse', cities: [
-				{url: 'url', label: 'Sion'},
-				{url: 'url', label: 'Monthey'},
-				{url: 'url', label: 'Sierre'}
+			{url: '251575-optical-center-esch-sur-alzette', label: 'Suisse', cities: [
+				{url: '251575-optical-center-esch-sur-alzette', label: 'Sion'},
+				{url: '251575-optical-center-esch-sur-alzette', label: 'Monthey'},
+				{url: '251575-optical-center-esch-sur-alzette', label: 'Sierre'}
 			]}
 		];
 	}

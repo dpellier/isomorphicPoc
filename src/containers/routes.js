@@ -2,6 +2,7 @@ import React from "react";
 import {Router, Route} from "react-router";
 
 import Home from "./home/Home";
+import Outlet from "./outlet/Outlet";
 
 /**
  * The React Router routes for both the server and the client.
@@ -9,6 +10,7 @@ import Home from "./home/Home";
 module.exports = (
 	<Router>
 		<Route path="/" component={Home} />
+		<Route path="/251575-optical-center-esch-sur-alzette" component={Outlet} />
 	</Router>
 );
 

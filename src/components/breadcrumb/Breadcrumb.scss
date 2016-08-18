@@ -1,0 +1,61 @@
+
+@import '../../containers/bootstrap';
+
+Breadcrumb {
+	& .components-navigation-breadcrumb-basic {
+		margin: 5px 0;
+		padding: 0;
+		list-style: none;
+		line-height: 12px;
+		font-size: 12px;
+
+		&__item {
+			display: inline-block;
+			position: relative;
+			padding: 0;
+
+			&:before {
+				@include bridge-icon(breadcrumb);
+
+				position: absolute;
+				top: 8px;
+				left: 0;
+				z-index: 1;
+				margin: 0;
+				color: #333;
+				content: '\f105';
+			}
+
+			&:first-child {
+				&:before {
+					content: '';
+				}
+
+				.components-navigation-breadcrumb-basic {
+					&__item {
+						&__link {
+							padding-left: 0;
+						}
+					}
+				}
+			}
+
+			&__link {
+				display: inline-block;
+				padding: 8px 2px 8px 15px;
+				width: 100%;
+				color: #333;
+
+				&:hover,
+				&:focus {
+					color: #333;
+				}
+
+				&__title {
+					position: relative;
+					z-index: 1;
+				}
+			}
+		}
+	}
+}

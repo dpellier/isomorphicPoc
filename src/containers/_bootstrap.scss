@@ -1399,8 +1399,10 @@ span {
 //
 // GLOBAL
 //
+$grey-lighter: #eee;
 $grey-light: #d1d4d7;
 $grey: #909298;
+$transition-default: all .4s ease;
 
 @mixin clear {
 	&:after {

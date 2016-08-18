@@ -1,0 +1,195 @@
+
+@import '../bootstrap';
+
+Outlet {
+	$outlet-menu-width: 300px;
+
+	& .outlet {
+
+		&__nav {
+			background: $grey-lighter;
+			font-size: $font-size-base - 2;
+		}
+
+		&__container {
+			position: relative;
+
+			&__leftbar {
+				transition: $transition-default;
+				padding: 15px 0;
+				transition-duration: 100ms;
+
+				@media(min-width: $screen-sm) {
+					position: absolute;
+					top: 0;
+					width: 100%;
+				}
+
+				&.fixed {
+					@media(min-width: $screen-sm) {
+						position: fixed;
+						width: $outlet-menu-width;
+					}
+
+					.outlet__container__leftbar__title {
+						float: none;
+					}
+
+					.outlet__container__leftbar__hours,
+					.outlet__container__leftbar__type {
+						display: none;
+					}
+				}
+
+				&.bottom {
+					top: auto;
+					bottom: 0;
+
+					@media(min-width: $screen-sm) {
+						width: $outlet-menu-width;
+					}
+
+					.outlet__container__leftbar__hours,
+					.outlet__container__leftbar__type {
+						display: none;
+					}
+				}
+
+				&__title {
+					float: left;
+					max-width: 100%;
+
+					.components-outlet-item-name-basic {
+						&__title {
+							margin: 15px 0 13px;
+							color: $brand-primary;
+
+							@media(min-width: $screen-sm) {
+								@include ellipsis;
+							}
+						}
+					}
+				}
+
+				&__hours {
+					float: left;
+					padding-top: 13px;
+					padding-left: 15px;
+				}
+
+				&__type {
+					@extend .h1;
+
+					clear: both;
+					margin: 0;
+					padding: 15px 0 0;
+
+					@media(min-width: $screen-sm) {
+						float: right;
+						clear: none;
+					}
+
+					span + span {
+						&:before {
+							padding-left: 5px;
+							color: $brand-primary;
+							content: '&';
+						}
+					}
+				}
+
+				&__menu {
+					&__item {
+						position: relative;
+						margin-top: 15px;
+						background: $grey-lighter;
+						padding: 15px;
+
+						@media(min-width: $screen-sm) {
+							width: $outlet-menu-width;
+						}
+
+						&__afnor {
+							position: absolute;
+							top: -10px;
+							right: -10px;
+						}
+
+						&__address {
+							min-height: 50px;
+
+							&--afnor {
+								margin-right: 65px;
+							}
+						}
+
+						&__title {
+							margin-top: 0;
+						}
+
+						&__phone {
+							width: 100%;
+						}
+
+						&__fax {
+							width: 100%;
+						}
+
+						&__action {
+							margin-top: 5px;
+							width: 100%;
+
+							&:first-child {
+								margin-top: 0;
+							}
+						}
+
+						&__ecommerce {
+							margin-top: 15px;
+						}
+
+						&__navbar {
+							display: none;
+							margin-top: 15px;
+							border-radius: $border-radius-base;
+
+							@media(min-width: $screen-sm) {
+								display: block;
+							}
+
+							&__list {
+								&__item {
+									// Disabling NestingDepth because of Bootstrap (standard navbar overwrite)
+									//scss-lint:disable ImportantRule, NestingDepth
+									padding: 0;
+
+									&__link {
+										transition: $transition-default;
+										border-radius: $border-radius-base;
+										background: $grey-light !important; // Thank's Bootstrap
+										padding: 4px 8px !important;
+										color: $text-color !important; // Thank's Bootstrap
+
+										&:hover,
+										&:focus {
+											background: darken($grey-light, 15%) !important; // Thank's Bootstrap
+											color: $text-color !important; // Thank's Bootstrap
+										}
+									}
+
+									&.active {
+										.outlet__container__leftbar__menu__item__navbar__list__item__link {
+											background: darken($grey-light, 15%) !important; // Thank's Bootstrap
+											color: $text-color !important; // Thank's Bootstrap
+										}
+									}
+									//scss-lint:enable ImportantRule, NestingDepth
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
